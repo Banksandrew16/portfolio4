@@ -1,0 +1,275 @@
+:root {
+  --primary: rgb(174, 239, 255);
+  --secondary: #000000;
+  --tertiary:  white;
+  --quarternary: grey;
+}
+
+body {
+  min-width: 320px;
+  background-color: var(--primary);
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/Images/ou.jpeg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* header style start */
+header {
+  padding: 30px 30px;
+  background-color: var(--quarternary);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-position: 100%;
+  background-attachment: fixed;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: var(--primary );
+}
+
+header a {
+  text-decoration: none;
+  color: var(--secondary );
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+header nav ul li a:hover {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  border-radius: 15px;
+}
+/* header style end */
+
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: auto ;
+}
+
+.main > h2 {
+  flex: 0 0 15%;
+  text-align: left;
+  border-right: 5px solid var(--tertiary);
+  padding-right: 100px;
+}
+
+.main > p {
+  flex: 1;
+  text-align: right;
+  border-right: 5px solid var(--tertiary);
+  padding-right: 100px;
+  text-size-adjust: 5000%;
+}
+
+.main div {
+  flex: 0 0 75%;
+}
+
+#ouab {
+  height: 200px;
+  width: 140px;
+  margin-right: 8px;
+  display: inline-block;
+  border: 5px solid var(--secondary)
+   
+}
+
+.main div p {
+  display: inline-flex;
+}
+
+.flex-container {
+  display:inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#main-project {
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--tertiary);
+  font-size: 40px;
+}
+
+.flex-item {
+  display: flex;
+  align-items:flex-end;
+  flex-basis: calc(50% - 20px);
+  border: 5px solid var(--secondary)
+  
+}
+section#my-work.main {height: 100px;}
+h2 {font-size: xx-large; align-self: flex-start;}
+h3 {font-size:large; align-self: flex-end;}
+
+section#main-project.card {align-self: center;}
+section#main-project.card1 {align-self: center;}
+section#main-project.card2 {align-self: center;}
+section#main-project.card3 {align-self: center;}
+section#main-project.card5 {align-self: center;}
+section#main-project.card4 {align-self: center;}
+
+.card{background-color: rgb(255, 0, 200);
+}
+.card2{background-color: blueviolet;}
+
+.card3{background-color: crimson;}
+
+.card4{background-color: darkgoldenrod}
+
+.card5{background-color: darkgreen; }
+
+.card:hover {
+  opacity: 69;
+}
+/* footer style start */
+footer {
+  padding: 30px 30px;
+  background-color: var(--quarternary);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer h2 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 34px;
+  color: var(--secondary);
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+footer ul {
+  margin: 7px 0;
+}
+/* footer style end */
+
+@media screen and (max-width: 992px) {
+  header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+
+  header h1 {
+      width: 100%;
+      text-align: center;
+  }
+
+  header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  header nav ul li a {
+      font-size: 20px;
+  }
+
+ a.flex-container {width: 400px; height: 200px;}
+
+  .card {
+      width: 50%; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+      width: 100%;
+  }
+  .card2 {
+    width: 100%;
+}
+  .card3 {
+    width: 100%;
+}
+  .card4 {
+    width: 100%;
+}
+  .card5 {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+      width: 100%;
+  }
+  .card2 {
+    width: 100%;
+}
+  .card3 {
+    width: 100%;
+}
+  .card4 {
+    width: 100%;
+}
+  .card5 {
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 320px) {
+  .card {
+      width: 100%;
+  }
+  .card2 {
+    width: 100%;
+}
+  .card3 {
+    width: 100%;
+}
+  .card4 {
+    width: 100%;
+}
+  .card5 {
+    width: 100%;
+}
+
+}
